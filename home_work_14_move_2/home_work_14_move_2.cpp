@@ -18,7 +18,7 @@ public:
             cstring_tmp = other.cstring;
         }
         else {
-            cstring_tmp = cstring;
+            cstring_tmp = std::move(cstring);
             cstring_tmp_max = other.cstring;
         }
          if (cstring.size() != other.cstring.size()) {
